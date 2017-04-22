@@ -8,5 +8,5 @@ export interface IHttpClient {
   get<T>(url: string, data: T): Promise<IResponse<T>>;
   post<T>(url: string, data: T): Promise<IResponse<T>>;
   put<T>(url: string, data: T): Promise<IResponse<T>>;
-  delete(url: string): Promise<void>;
+  delete<T>(url: string): Promise<IResponse<T>>;
 }
