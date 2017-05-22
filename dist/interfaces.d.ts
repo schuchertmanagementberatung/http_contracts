@@ -12,8 +12,12 @@ export interface IHttpClient {
     delete<T>(url: string, options?: IRequestOptions): Promise<IResponse<T>>;
 }
 export interface IHttpRouter {
-    readonly router: Express.Router;
+    readonly router: any;
     readonly baseRoute: string;
     initialize(): Promise<any> | any;
     initializeRouter(): Promise<any> | any;
+}
+export interface IHttpExtension {
+    readonly server: any;
+    readonly app: any;
 }
