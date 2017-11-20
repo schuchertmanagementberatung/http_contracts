@@ -1,5 +1,4 @@
-import {IResponse} from './iresponse'
-import {IRequestOptions} from "./irequest_options";
+import {IRequestOptions, IResponse} from './index';
 
 export interface IHttpClient {
   get<T>(url: string, options?: IRequestOptions): Promise<IResponse<T>>;
