@@ -1,4 +1,4 @@
 export interface IResponse<T> {
-  result: T | Array<T>;
+  result: T;
   status: number;
 }
