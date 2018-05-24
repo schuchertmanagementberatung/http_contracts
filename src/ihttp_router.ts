@@ -3,4 +3,5 @@ export interface IHttpRouter {
   readonly baseRoute: string;
   initialize(): Promise<any> | any;
   initializeRouter(): Promise<any> | any;
+  dispose(): Promise<void> | void;
 }
