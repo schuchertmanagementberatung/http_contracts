@@ -1,3 +1,3 @@
 import * as popsicle from 'popsicle';
 
-export interface IRequestOptions extends popsicle.RequestOptions {}
+export interface IRequestOptions extends popsicle.DefaultsOptions {}
