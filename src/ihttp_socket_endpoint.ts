@@ -1,7 +1,5 @@
-import '@types/socket.io';
-
 export interface IHttpSocketEndpoint {
   readonly namespace: string;
-  initializeEndpoint(socketIo: SocketIO.Server): Promise<any> | any;
+  initializeEndpoint(socketIo: SocketIO.Namespace): Promise<any> | any;
   dispose(): Promise<void> | void;
 }
