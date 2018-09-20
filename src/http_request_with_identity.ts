@@ -3,11 +3,11 @@ import {Request} from 'express';
 import {IIdentity} from '@essential-projects/iam_contracts';
 
 /**
- * Extends the base HttpRequest object to include content exlusive to the deployment api.
+ * Extends the base HttpRequest object to include a users identity.
  */
 export interface HttpRequestWithIdentity extends Request {
   /**
-   * Contains the user specific context with which a user is performing requests against the deployment api.
+   * Contains the requesting users identity.
    */
   identity: IIdentity;
 }
