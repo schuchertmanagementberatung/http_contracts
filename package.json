@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "the referencable contracts for http",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
@@ -19,14 +19,15 @@
     "popsicle": "9.2.0"
   },
   "devDependencies": {
-    "@essential-projects/tslint-config": "1.1.1",
+    "@essential-projects/tslint-config": "1.1.2",
     "@types/express": "4.16.0",
+    "@types/socket.io": "1.4.38",
     "gulp": "3.9.1",
-    "gulptraum": "2.2.4",
+    "gulptraum": "2.3.0",
     "gulptraum-typescript": "1.5.0",
     "tsconfig": "7.0.0",
-    "tslint": "5.10.0",
-    "typescript": "2.8.1"
+    "tslint": "5.11.0",
+    "typescript": "2.8.3"
   },
   "scripts": {
     "build": "gulp build",
