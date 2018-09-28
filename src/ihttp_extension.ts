@@ -1,4 +1,4 @@
 export interface IHttpExtension {
-  readonly server: any;
+  readonly httpServer: any;
   readonly app: any;
 }
