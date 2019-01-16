@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "the referencable contracts for http",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
@@ -13,7 +13,7 @@
     "Sebastian Meier <sebastian.meier@5minds.de>"
   ],
   "dependencies": {
-    "@essential-projects/iam_contracts": "~3.2.0",
+    "@essential-projects/iam_contracts": "~3.4.0",
     "popsicle": "9.2.0"
   },
   "devDependencies": {
