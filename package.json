@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "2.3.6",
+  "version": "2.3.7",
   "description": "the referencable contracts for http",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
@@ -22,7 +22,7 @@
     "@types/socket.io": "^2.1.0",
     "gulp": "^4.0.0",
     "gulptraum": "^3.0.0",
-    "gulptraum-typescript": "^2.0.0",
+    "gulptraum-typescript": "^3.0.0",
     "tsconfig": "^7.0.0",
     "tslint": "^5.11.0",
     "typescript": "^3.1.6"
