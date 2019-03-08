@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "@essential-projects/iam_contracts": "~3.4.0",
-    "@essential-projects/websocket_contracts": "~0.1.0",
+    "@essential-projects/websocket_contracts": "feature~add_basic_implementation",
     "@types/express": "^4.16.0",
     "@types/socket.io": "^2.1.0",
     "popsicle": "~9.2.0"
