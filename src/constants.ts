@@ -1,1 +1,1 @@
-export const defaultSocketNamespace: string = '/default';
+export const defaultSocketNamespace = '/default';
