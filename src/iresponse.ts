@@ -1,4 +1,4 @@
-export interface IResponse<T> {
-  result: T;
+export interface IResponse<TResult> {
+  result: TResult;
   status: number;
 }
