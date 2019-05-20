@@ -1,8 +1,8 @@
 import {IRequestOptions, IResponse} from './index';
 
 export interface IHttpClient {
-  get<T>(url: string, options?: IRequestOptions): Promise<IResponse<T>>;
-  post<D, T>(url: string, data: D, options?: IRequestOptions): Promise<IResponse<T>>;
-  put<T>(url: string, data: T, options?: IRequestOptions): Promise<IResponse<T>>;
-  delete<T>(url: string, options?: IRequestOptions): Promise<IResponse<T>>;
+  get<TResult>(url: string, options?: IRequestOptions): Promise<IResponse<TResult>>;
+  post<TPayload, TResult>(url: string, data: TPayload, options?: IRequestOptions): Promise<IResponse<TResult>>;
+  put<TResult>(url: string, data: TResult, options?: IRequestOptions): Promise<IResponse<TResult>>;
+  delete<TResult>(url: string, options?: IRequestOptions): Promise<IResponse<TResult>>;
 }
