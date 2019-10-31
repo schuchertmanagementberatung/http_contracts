@@ -6,3 +6,4 @@ export * from './ihttp_router';
 export * from './ihttp_socket_endpoint';
 export * from './irequest_options';
 export * from './iresponse';
+export * from './resolve_identity_middleware';
