@@ -3,11 +3,11 @@ import {Logger} from 'loggerhythm';
 
 import {BadRequestError, UnauthorizedError} from '@essential-projects/errors_ts';
 import {IIdentityService} from '@essential-projects/iam_contracts';
+
+import {MiddlewareFunction} from './constants';
 import {HttpRequestWithIdentity} from './http_request_with_identity';
 
-const logger = Logger.createLogger('processengine:consumer_api:resolve_identity_middleware');
-
-export type MiddlewareFunction = (request: HttpRequestWithIdentity, response: Response, next: NextFunction) => Promise<void>;
+const logger = Logger.createLogger('essentialprojects:http:identity_resolver');
 
 export function createResolveIdentityMiddleware(identityService: IIdentityService): MiddlewareFunction {
 
