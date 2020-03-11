@@ -29,9 +29,14 @@ export function deprecate(alternativeRoute?: string): MiddlewareFunction {
       deprecatedRoute = deprecatedRoute.replace(request.params[paramName], `:${paramName}`);
     }
 
+    // See: https://tools.ietf.org/id/draft-dalal-deprecation-header-01.html
+    response.setHeader('Deprecation', 'true');
+
     logger.warn(`Route '${deprecatedRoute}' has been depcreated an will be removed in an upcoming major release!`);
 
     if (alternativeRoute) {
+      // See: https://tools.ietf.org/id/draft-dalal-deprecation-header-01.html#recommend-replacement
+      response.setHeader('Link', alternativeRoute);
       logger.warn(`Use '${alternativeRoute}' instead!`);
     }
 
