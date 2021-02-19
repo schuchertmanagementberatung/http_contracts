@@ -1,32 +1,30 @@
 {
-  "name": "@essential-projects/http_contracts",
+  "name": "@schuchertmanagementberatung/http_contracts",
   "publishConfig": {
-    "registry": "https://www.npmjs.com"
+    "registry": "https://npm.pkg.github.com/"
   },
-  "version": "2.6.0",
+  "version": "1.0.0",
   "description": "the referencable contracts for http",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
   "typings": "dist/index.d.ts",
-  "author": "5Minds IT-Solutions GmbH & Co. KG",
   "contributors": [
     "Christian Werner <christian.werner@5minds.de>",
     "Sebastian Meier <sebastian.meier@5minds.de>"
   ],
   "dependencies": {
-    "@essential-projects/errors_ts": "^1.5.2",
-    "@essential-projects/iam_contracts": "^3.5.0",
-    "@types/express": "^4.16.0",
-    "@types/socket.io": "^2.1.0",
+    "@essential-projects/errors_ts": "^1.6.1",
+    "socket.io": "^3.1.1",
     "loggerhythm": "^3.0.4",
-    "popsicle": "^10.0.0"
+    "popsicle": "^12.1.0"
   },
   "devDependencies": {
-    "@essential-projects/eslint-config": "^1.0.0",
-    "@types/node": "^12.11.7",
-    "express": "^4.17.0",
-    "eslint": "^6.6.0",
-    "typescript": "^3.7.2"
+    "@schuchertmanagementberatung/eslint-config": "1.0.3",
+    "@types/express": "^4.16.0",
+    "@types/node": "14.14.30",
+    "express": "4.17.0",
+    "eslint": "7.20.0",
+    "typescript": "4.1.5"
   },
   "scripts": {
     "clean": "rm -rf dist",
@@ -34,8 +32,8 @@
     "build-commonjs": "tsc",
     "build-amd": "tsc --module amd --outDir ./dist/amd",
     "prepare": "npm run build",
-    "lint": "eslint src/*.ts",
-    "lint-fix": "eslint --fix src/*.ts",
+    "lint": "eslint --fix src/*.ts",
+    "lint-nofix": "eslint src/*.ts",
     "test": ":"
   }
 }

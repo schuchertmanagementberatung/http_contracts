@@ -1,7 +1,5 @@
-import {NextFunction, Response} from 'express';
-
-import {HttpRequestWithIdentity} from './http_request_with_identity';
+import {NextFunction, Request, Response} from 'express';
 
 export const defaultSocketNamespace = '/default';
 
-export type MiddlewareFunction = (request: HttpRequestWithIdentity, response: Response, next: NextFunction) => void | Promise<void>;
+export type MiddlewareFunction = (request: Request, response: Response, next: NextFunction) => void | Promise<void>;

@@ -1,8 +1,7 @@
-import {NextFunction, Response} from 'express';
+import {NextFunction, Request, Response} from 'express';
 import {Logger} from 'loggerhythm';
 
 import {MiddlewareFunction} from './constants';
-import {HttpRequestWithIdentity} from './http_request_with_identity';
 
 const logger = Logger.createLogger('essentialprojects:http:deprecation_notifier');
 
@@ -21,7 +20,7 @@ const logger = Logger.createLogger('essentialprojects:http:deprecation_notifier'
  */
 export function deprecate(alternativeRoute?: string): MiddlewareFunction {
 
-  return (request: HttpRequestWithIdentity, response: Response, next: NextFunction): void => {
+  return (request: Request, response: Response, next: NextFunction): void => {
 
     let deprecatedRoute = request.originalUrl;
 
